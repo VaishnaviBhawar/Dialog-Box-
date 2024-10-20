@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br><br><br><br><br><br>
+<h1>
+    Hair Studio
+
+</h1>
+<p>Styling your hair and styling your life
+</p>
+<button id="btn" onclick="opentab()">Sing Up</button>
+<div class="overlay" id="overlay">
+    <div class="modal">
+        <hr>
+         <img src="loginicon.png">
+         <hr><br>
+         <div class="cen">
+            <b>
+                📧Email:
+             </b><br>
+             <input type="email" placeholder="vaishnavibhawar@gmail.com"> <br><br>
+             <b>
+                🤫Password:
+             </b><br>
+             <input type="password" placeholder="**************"> 
+         </div>
+         <br><br>
+         <button id="btn1">Sing Up</button>
+         <img src="closeicon.png" class="close-icon" onclick="closetab()">
+    </div>
+</div>
+
+
+
+    <script>
+        function opentab(){
+  const overlayElement = document.getElementById('overlay');
+  overlayElement.style.display = 'flex';
+}
+
+function closetab() {
+  const overlayElement = document.getElementById("overlay");
+  overlayElement.style.display = "none";
+}
+
+    </script>
+</body>
+</html>
